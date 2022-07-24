@@ -1,4 +1,17 @@
-# Native File Dialog #
+# Native File Dialog w/ CMakeLists.txt #
+
+A simple modification to [Native File Dialog](https://github.com/mlabbe/nativefiledialog) by Michael Labbe of Frogtoss Games. This library is identical to the original except for the inclusion of CMakeLists.txt. This allows easy setup in CMake-based projects.
+
+To use Native File Dialog in your CMake projects:
+1. Clone this repository into your project repository.
+2. Add the repository root to your CMakeLists.txt using `add_subdirectory()`.
+3. Link your CMake targets to `NativeFileDialog::NativeFileDialog`.
+
+Native File Dialog builds as a static library. Original readme follows.
+
+---
+
+*(Original Readme)*
 
 A tiny, neat C library that portably invokes native file open, folder select and save dialogs.  Write dialog code once and have it pop up native dialogs on all supported platforms.  Avoid linking large dependencies like wxWidgets and qt.
 
