@@ -38,4 +38,6 @@ target_link_libraries(NativeFileDialog
 target_compile_definitions(NativeFileDialog
 	PRIVATE
 		"$<$<PLATFORM_ID:Windows>:_CRT_SECURE_NO_WARNINGS>"
+		"$<$<PLATFORM_ID:Windows>:UNICODE>"
+		"$<$<PLATFORM_ID:Windows>:_UNICODE>"
 )
